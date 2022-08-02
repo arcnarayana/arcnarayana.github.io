@@ -6,7 +6,8 @@
 
 
     <!--Place DTM header above this-->
-    
+
+       
 <script>
     window.geometData = window.geometData || [];
     window.geometData.push({
@@ -30,13 +31,16 @@
 <script>
 
 function logIn() {
-document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
+    var loginUserID = document.getElementById("loginUserID").value;
+    window.localStorage.setItem("userID", loginUserID);
+    document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
 }
 </script>
 
 <script>
 function logOut() {
-document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
+    window.localStorage.removeItem('userID');
+    document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
 }
 
 </script>
@@ -136,7 +140,7 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
                                         <tr>
                                             <td class="search_title">User Name:</td>
                                             <td>
-                                                <input type="text" name="loginName" class="textinput" size="20" value="troosevelt">
+                                                <input id="loginUserID" type="text" name="loginName" class="textinput" size="20" value="troosevelt">
                                             </td>
                                         </tr>
                                         <tr>
