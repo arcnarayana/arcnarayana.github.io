@@ -10,6 +10,7 @@
     <!--Place DTM header above this-->
 
 <script>
+    var userID = window.localStorage.getItem("userID");
     window.geometData = window.geometData || [];
     window.geometData.push({
                     "event":"prodView",
@@ -20,7 +21,7 @@
                         "server": "Geometrixx Clothiers Site",
                         },
                     "user":{
-                        "userID" : "",
+                        "userID" : userID,
                         "loginStatus" : ""
                     },
                     "product": {

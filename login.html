@@ -33,7 +33,7 @@
 function logIn() {
     var loginUserID = document.getElementById("loginuserid").value;
     window.localStorage.setItem("userID", loginUserID);
-    console.log("new user logged in: " + window.localStorage.getItem("userID"))
+    console.log("new user logged in: " + window.localStorage.getItem("userID"));
     document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
 }
 </script>
