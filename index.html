@@ -12,6 +12,11 @@
       </script>
 
 <script>
+        var userID = window.localStorage.getItem("userID");
+        // window.localStorage.setItem('userID', 'test1');
+        // window.localStorage.getItem('userID');
+        // window.localStorage.removeItem('userID');
+
         window.geometData = window.geometData || [];
         window.geometData.push({
                         "event":"pageView",
@@ -21,7 +26,7 @@
                             "siteSubsection": "Home",
                             },
                         "user":{
-                            "userID" : "212342343",
+                            "userID" : userID,
                             "loginStatus" : "Loggedin"
                         }
                     });
