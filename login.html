@@ -31,7 +31,7 @@
 <script>
 
 function logIn() {
-    var loginUserID = document.getElementById("loginUserID").value;
+    var loginUserID = document.getElementById("loginuserid").value;
     window.localStorage.setItem("userID", loginUserID);
     console.log("new user logged in: " + window.localStorage.getItem("userID"))
     document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
@@ -141,7 +141,7 @@ function logOut() {
                                         <tr>
                                             <td class="search_title">User Name:</td>
                                             <td>
-                                                <input id="loginUserID" type="text" name="loginName" class="textinput" size="20" value="troosevelt">
+                                                <input id="loginuserid" type="text" name="loginName" class="textinput" size="20" value="troosevelt">
                                             </td>
                                         </tr>
                                         <tr>
