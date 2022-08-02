@@ -9,18 +9,27 @@
 
     <!--Place DTM header above this-->
 
-
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Men:Fine Apparel",
-                siteSection: "Men",
-                siteSubsection: "Fine Apparel",
-                server: "Geometrixx Clothiers Site"
-            },
-        };
+        var userID = window.localStorage.getItem("userID");
+        window.geometData = window.geometData || [];
+        window.geometData.push({
+                        "event":"pageView",
+                        "page":{
+                            "pageName": "Men:Fine Apparel",
+                            "siteSection": "Men",
+                            "siteSubsection": "Fine Apparel",
+                            "server": "Geometrixx Clothiers Site",
+                            },
+                        "user":{
+                            "userID" : userID,
+                            "loginStatus" : ""
+                        },
+                    });
+    
     </script>
+    
+    <script src="https://assets.adobedtm.com/01296dd00565/e955080e7d6a/launch-cdd4db8968c7-development.min.js" async></script> 
+    
 
     <title>Geometrixx|Men|Fine Apparel</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
