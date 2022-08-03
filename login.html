@@ -43,7 +43,25 @@ function logOut() {
     window.localStorage.removeItem('userID');
     document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
 }
+</script>
 
+<script>
+function register() {
+    var registerUserID = document.getElementById("registeruserid").value;
+    window.geometData.push({
+                    "event":"register",
+                    "page":{
+                        "pageName": "Register",
+                        "siteSection": "Register",
+                        "siteSubsection": "Register",
+                        "server": "Geometrixx Clothiers Site",
+                        },
+                    "user":{
+                        "userID" : registerUserID,
+                        "loginStatus" : ""
+                    }
+                });
+}
 </script>
 
 
@@ -172,6 +190,43 @@ function logOut() {
                         </table>
                     </td>
                 </table>
+
+                <table><span class="description">Register to Geometrixx<br/><br/></span>
+                    <div class="form">
+                        <form method="post" action="login.html">
+                            <tr>
+                                <td class="search_title">User Name:</td>
+                                <td>
+                                    <input id="registeruserid" type="text" name="loginName" class="textinput" size="20" value="troosevelt">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="search_title">Password:</td>
+                                <td>
+                                    <input type="text" name="loginPassword" class="textinput" size="20" value="*********">
+                                </td>
+                            </tr>
+        </form>
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                   
+                            <tr>
+            <td>
+            </td>		
+                                <td>
+                                    <input type="button" value="Register" class="button" onclick="register()" />
+            <br/>
+            <br/>			
+                                </td>
+                            </tr>
+        
+                    </div>
+            </td>
+            </tr>
+            </table>
+        </td>
+    </table>
 
                 <!---Form End--->
                 </td>
