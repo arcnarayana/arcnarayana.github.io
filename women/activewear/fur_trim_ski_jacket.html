@@ -8,23 +8,28 @@
 
 
     <!--Place DTM header above this-->
+<script>
+    var userID = window.localStorage.getItem("userID");
+    window.geometData = window.geometData || [];
+    window.geometData.push({
+                    "event":"pageView",
+                    "page":{
+                        "pageName": "Women:Activewear:Fur Trim Ski Jacket",
+                        "siteSection": "Women",
+                        "siteSubsection": "Activewear",
+                        "server": "Geometrixx Clothiers Site",
+                        },
+                    "user":{
+                        "userID" : userID,
+                        "loginStatus" : ""
+                    },
+                    "product": {
+                        "productID": "100241",
+                        "productName": "Fur Trim Ski Jacket"
+                    }
+                });
 
-
-    <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "",
-                siteSection: "",
-                siteSubsection: "",
-                server: ""
-            },
-            product: {
-                productID: "100241",
-                productName: "Fur Trim Ski Jacket"
-            },
-        };
-    </script>
+</script>
 
 <script src="https://assets.adobedtm.com/9ee7107080b4/153504d4432e/launch-afa553d1ba18-development.min.js" async></script> 
 

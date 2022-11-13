@@ -8,23 +8,28 @@
 
 
     <!--Place DTM header above this-->
+<script>
+    var userID = window.localStorage.getItem("userID");
+    window.geometData = window.geometData || [];
+    window.geometData.push({
+                    "event":"pageView",
+                    "page":{
+                        "pageName": "Men:Activewear:Military Jacket",
+                        "siteSection": "Men",
+                        "siteSubsection": "Activewear",
+                        "server": "Geometrixx Clothiers Site",
+                        },
+                    "user":{
+                        "userID" : userID,
+                        "loginStatus" : ""
+                    },
+                    "product": {
+                        "productID": "200241",
+                        "productName": "Military Jacket"
+                    }
+                });
 
-
-    <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Men:Activewear:Military Jacket",
-                siteSection: "Men",
-                siteSubsection: "Activewear",
-                server: "Geometrixx Clothiers Site"
-            },
-            product: {
-                productID: "200241",
-                productName: "Military Jacket"
-            },
-        };
-    </script>
+</script>
 
     <title>Geometrixx|Men|Activewear|Military Jacket</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

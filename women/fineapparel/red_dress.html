@@ -10,21 +10,29 @@
     <!--Place DTM header above this-->
 
 
-    <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "",
-                siteSection: "Women",
-                siteSubsection: "Fine Apparel",
-                server: "Geometrixx Clothiers Site"
-            },
-            product: {
-                productID: "101341",
-                productName: "Red Dress"
-            },
-        };
-    </script>
+<script>
+    var userID = window.localStorage.getItem("userID");
+    window.geometData = window.geometData || [];
+    window.geometData.push({
+                    "event":"pageView",
+                    "page":{
+                        "pageName": "Women:Fine Apparel:Red Dress",
+                        "siteSection": "Women",
+                        "siteSubsection": "Fine Apparel",
+                        "server": "Geometrixx Clothiers Site",
+                        },
+                    "user":{
+                        "userID" : userID,
+                        "loginStatus" : ""
+                    },
+                    "product": {
+                        "productID": "101341",
+                        "productName": "Red Dress"
+                    }
+                });
+
+</script>
+
 
 <script src="https://assets.adobedtm.com/9ee7107080b4/153504d4432e/launch-afa553d1ba18-development.min.js" async></script> 
 

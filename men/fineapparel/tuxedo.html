@@ -9,22 +9,28 @@
 
     <!--Place DTM header above this-->
 
+<script>
+    var userID = window.localStorage.getItem("userID");
+    window.geometData = window.geometData || [];
+    window.geometData.push({
+                    "event":"pageView",
+                    "page":{
+                        "pageName": "Men:Fine Apparel:Tuxedo",
+                        "siteSection": "Men",
+                        "siteSubsection": "Fine Apparel",
+                        "server": "Geometrixx Clothiers Site",
+                        },
+                    "user":{
+                        "userID" : userID,
+                        "loginStatus" : ""
+                    },
+                    "product": {
+                        "productID": "201233",
+                        "productName": "Tuxedo"
+                    }
+                });
 
-    <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "",
-                siteSection: "Men",
-                siteSubsection: "Fine Apparel",
-                server: "Geometrixx Clothiers Site"
-            },
-            product: {
-                productID: "201233",
-                productName: "Tuxedo"
-            },
-        };
-    </script>
+</script>
 
     <title>Geometrixx|Men|Fine Apparel|Tuxedo</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
