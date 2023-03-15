@@ -1,3 +1,5 @@
+try{
+
 // Initialize AppMeasurement
 var s_account = "amazonindiasmartcommercedev";
 var s = s_gi(s_account);
@@ -31,8 +33,12 @@ s.eVar12 = s.getNewRepeat();
 s.t()
 
 }
-
 s.doPlugins = s_doPlugins;
+
+}
+catch(e){ 
+    console.log("===> s_code error: " + e.message)
+}
 
 
 /************************** PLUGINS SECTION **************************/
