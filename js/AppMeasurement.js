@@ -18,22 +18,20 @@ s.linkInternalFilters = "javascript:,example.com";
 
 s.visitor = Visitor.getInstance("00CB252263F5CE690A495EEF@AdobeOrg");
 
+s.t();
+
+console.log("===> set plugin true")
+
 s.usePlugins = true;
+
 s.doPlugins = function() {
-    console.log("===> plugin start")
-
-// Use implementation plug-ins that are defined below in this section
-
 var url = window.location.href;
 
 s.campaign = s.Util.getQueryParam("cid",url);
 s.eVar1 = url;
-s.eVar10 = D = mid;
+s.eVar10 = visitor.getMarketingCloudVisitorID();
 s.eVar11  = getTimeParting("Asia/Calcutta");  
-s.eVar12 = s.getNewRepeat();
-s.t();
-
-console.log("===> pageview fired")
+s.eVar12 = getNewRepeat();
 
 }
 
