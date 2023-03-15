@@ -5,8 +5,8 @@ var s = s_gi(s_account);
 /************************** CONFIG SECTION **************************/;
 /* You may add or alter any code config here. */
 
-s.trackingServer = "";
-s.trackingServerSecure = "";
+s.trackingServer = "amazoninsmartcommerce.sc.omtrdc.net";
+s.trackingServerSecure = "amazoninsmartcommerce.sc.omtrdc.net";
 
 s.trackDownloadLinks = true;
 s.trackExternalLinks = true;
