@@ -16,26 +16,23 @@ s.linkInternalFilters = "javascript:,example.com";
 
 s.visitor = Visitor.getInstance("00CB252263F5CE690A495EEF@AdobeOrg");
 
-s.eVar1 = window.location.href;
-s.t();
-
-/*
-
 s.usePlugins = true;
 function s_doPlugins(s) {
 
 // Use implementation plug-ins that are defined below in this section
 
+var url = window.location.href;
+
 s.campaign = s.Util.getQueryParam("cid",url);
-s.eVar1 = window.location.href;
-//s.eVar9  = getTimeParting("Asia/Calcutta");  
-//s.eVar10 = s.getNewRepeat();
+s.eVar1 = url;
+s.eVar10 = D = mid;
+s.eVar11  = getTimeParting("Asia/Calcutta");  
+s.eVar12 = s.getNewRepeat();
 s.t()
 
 }
-s.doPlugins = s_doPlugins;
 
-*/
+s.doPlugins = s_doPlugins;
 
 
 /************************** PLUGINS SECTION **************************/
