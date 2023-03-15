@@ -19,7 +19,8 @@ s.linkInternalFilters = "javascript:,example.com";
 s.visitor = Visitor.getInstance("00CB252263F5CE690A495EEF@AdobeOrg");
 
 s.usePlugins = true;
-function s_doPlugins(s) {
+s.doPlugins = function() {
+    console.log("===> plugin start")
 
 // Use implementation plug-ins that are defined below in this section
 
@@ -30,10 +31,11 @@ s.eVar1 = url;
 s.eVar10 = D = mid;
 s.eVar11  = getTimeParting("Asia/Calcutta");  
 s.eVar12 = s.getNewRepeat();
-s.t()
+s.t();
+
+console.log("===> pageview fired")
 
 }
-s.doPlugins = s_doPlugins;
 
 }
 catch(e){ 
