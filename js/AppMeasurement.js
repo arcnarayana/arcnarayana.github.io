@@ -44,7 +44,7 @@ try{
         if(s.pageName) s.getPageLoadTime();
         if(s._pltPreviousPage) {
             s.prop10 = s._pltLoadTime;
-            s.events += ",event10=" + s._pltLoadTime;
+            s.events = apl(s.events, "event10=" + s._pltLoadTime);
         }
     
         // Copy the data from eVar to props
