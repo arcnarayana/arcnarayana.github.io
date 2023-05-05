@@ -30,6 +30,26 @@
     </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
 
+    <script>
+
+        function searchGo() {
+
+        s.eVar1 = "pageURL";
+        s.page = s.eVar2 = "pageName";
+
+        s.eVar3 = "Link Name";
+        s.eVar4 = "Link Location";
+        s.eVar5 = "Link Destination";
+
+        s.linkTrackVars = "s.page, eVar1,eVar2,eVar3,eVar4,eVar5,eVar7,eVar8,eVar13,eVar14,eVar15,eVar16,events";
+        s.linkTrackEvents = "event1";
+        s.events = "event1";
+
+        s.tl(true,"o","Custom Link Click"); 
+
+        }
+    </script>
+
 
 </head>
 
@@ -56,7 +76,7 @@
 
 			<form action="search/searchresults.html">
 			<input type="text" id="searchfield" name="q" />
-			<input type="submit" Value="Go" class="button">
+			<input type="submit" Value="Go" class="button" onclick="searchGo()">
 
 		<!--	<form id="searchform" action="" method="post" name="cf">
 			<input type="text" id="searchfield" name="searchfield" value="" />
