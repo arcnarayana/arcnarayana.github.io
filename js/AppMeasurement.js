@@ -35,16 +35,16 @@ try{
         s.eVar11  = getTimeParting("Asia/Calcutta");  
         s.eVar12 = getNewRepeat();
     
-        if(s.pageName) s.getPercentPageViewed();
+        if(s.pageName) getPercentPageViewed();
         if(s._ppvPreviousPage) {
             s.eVar6 = s._ppvPreviousPage;
             s.eVar9 = "highestPercentViewed=" + s._ppvHighestPercentViewed + " | initialPercentViewed=" + s._ppvInitialPercentViewed + " | foldsSeen=" + s._ppvFoldsSeen + " | foldsAvailable=" + s._ppvFoldsAvailable;
         }      
     
-        if(s.pageName) s.getPageLoadTime();
+        if(s.pageName) getPageLoadTime();
         if(s._pltPreviousPage) {
             s.prop10 = s._pltLoadTime;
-            s.events = apl(s.events, "event10=" + s._pltLoadTime);
+            s.events += ",event10=" + s._pltLoadTime;
         }
     
         // Copy the data from eVar to props
