@@ -34,7 +34,7 @@ try{
         s.eVar10 = visitor.getMarketingCloudVisitorID();
         s.eVar11  = getTimeParting("Asia/Calcutta");  
         s.eVar12 = getNewRepeat();
-        s.eVar6  = getPreviousValue(s.pageName,"gpv_Page");
+        s.eVar6  = s.getPreviousValue(s.pageName,'gpv_pn');
     
        // if(s.pageName) getPercentPageViewed();
        // if(_ppvPreviousPage) {
