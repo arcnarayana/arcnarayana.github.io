@@ -22,8 +22,7 @@ try{
     
     s.visitor = Visitor.getInstance("00CB252263F5CE690A495EEF@AdobeOrg");
     
-    s.t(); // Triggers the pageview event. Execute this command on every page load. Do not tigger this command on clicks.
-    
+       
     s.usePlugins = true;
     s.doPlugins = function() {
     
@@ -105,7 +104,8 @@ try{
       }
     
     }
-    
+
+       
     }
     catch(e){ 
         console.log("===> s_code error: " + e.message)
