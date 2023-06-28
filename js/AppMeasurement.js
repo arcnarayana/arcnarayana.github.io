@@ -31,6 +31,7 @@ try{
     
         s.server = window.location.hostname;
         s.eVar1 = url;
+        s.pageName = url;
         s.eVar10 = visitor.getMarketingCloudVisitorID();
         s.eVar11  = getTimeParting("Asia/Calcutta");  
         s.eVar12 = getNewRepeat();
