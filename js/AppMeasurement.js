@@ -35,17 +35,17 @@ try{
         s.eVar10 = visitor.getMarketingCloudVisitorID();
         s.eVar11  = getTimeParting("Asia/Calcutta");  
         s.eVar12 = getNewRepeat();
+        s.eVar6  = getPreviousValue(s.pageName,'gpv_pn');
     
         if(s.pageName) getPercentPageViewed();
-        if(s._ppvPreviousPage) {
-            s.eVar6 = s._ppvPreviousPage;
-            s.eVar9 = "highestPercentViewed=" + s._ppvHighestPercentViewed + " | initialPercentViewed=" + s._ppvInitialPercentViewed + " | foldsSeen=" + s._ppvFoldsSeen + " | foldsAvailable=" + s._ppvFoldsAvailable;
+        if(_ppvPreviousPage) {
+            s.eVar9 = "highestPercentViewed=" + _ppvHighestPercentViewed + " | initialPercentViewed=" + _ppvInitialPercentViewed + " | foldsSeen=" + _ppvFoldsSeen + " | foldsAvailable=" + _ppvFoldsAvailable;
         }      
     
         if(s.pageName) getPageLoadTime();
-        if(s._pltPreviousPage) {
-            s.prop10 = s._pltLoadTime;
-            s.events += ",event10=" + s._pltLoadTime;
+        if(window._pltPreviousPage) {
+            s.prop10 = window._pltLoadTime;
+            s.events += ",event10=" + window._pltLoadTime;
         }
     
         // Copy the data from eVar to props
