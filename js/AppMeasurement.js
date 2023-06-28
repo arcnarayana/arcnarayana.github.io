@@ -35,18 +35,18 @@ try{
         s.eVar10 = visitor.getMarketingCloudVisitorID();
         s.eVar11  = getTimeParting("Asia/Calcutta");  
         s.eVar12 = getNewRepeat();
-        s.eVar6  = getPreviousValue(s.pageName,'gpv_pn');
+        s.eVar6  = getPreviousValue(s.pageName,"gpv_Page");
     
-        if(s.pageName) getPercentPageViewed();
-        if(_ppvPreviousPage) {
-            s.eVar9 = "highestPercentViewed=" + _ppvHighestPercentViewed + " | initialPercentViewed=" + _ppvInitialPercentViewed + " | foldsSeen=" + _ppvFoldsSeen + " | foldsAvailable=" + _ppvFoldsAvailable;
-        }      
+       // if(s.pageName) getPercentPageViewed();
+       // if(_ppvPreviousPage) {
+       //     s.eVar9 = "highestPercentViewed=" + _ppvHighestPercentViewed + " | initialPercentViewed=" + _ppvInitialPercentViewed + " | foldsSeen=" + _ppvFoldsSeen + " | foldsAvailable=" + _ppvFoldsAvailable;
+       // }      
     
-        if(s.pageName) getPageLoadTime();
-        if(window._pltPreviousPage) {
-            s.prop10 = window._pltLoadTime;
-            s.events += ",event10=" + window._pltLoadTime;
-        }
+       // if(s.pageName) getPageLoadTime();
+       // if(window._pltPreviousPage) {
+       //     s.prop10 = window._pltLoadTime;
+       //     s.events += ",event10=" + window._pltLoadTime;
+       // }
     
         // Copy the data from eVar to props
         s.linkTrackVars += ",pageURL,pageName,channel,prop1,prop3,prop4,prop5,prop6,prop7,prop8,prop14,prop15,prop16,events"
