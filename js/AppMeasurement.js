@@ -16,6 +16,7 @@ try{
     s.trackDownloadLinks = true;
     s.trackExternalLinks = true;
     s.trackInlineStats = true;
+    s.cookieDomainPeriods = "3";
     s.linkDownloadFileTypes = "exe,zip,wav,mp3,mov,mpg,avi,wmv,pdf,doc,docx,xls,xlsx,ppt,pptx";
     s.linkInternalFilters = "javascript:,*.amazon.in,*.amazon.com"; // Add all the internal domains here separate by comma
     s.collectHighEntropyUserAgentHints = true;
