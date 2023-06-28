@@ -100,7 +100,7 @@ try{
         
             var cmp = channel + "|" + utm_source + "|" + utm_medium + "|" + utm_campaign;
             s.campaign = cmp;
-            s.campaign = s.getValOnce(s.campaign,"s_campaign",30);
+            
       }
     
     }
