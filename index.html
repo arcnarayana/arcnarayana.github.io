@@ -14,24 +14,47 @@
 <script>
         var userID = window.localStorage.getItem("userID");
 
-        window.geometData = window.geometData || [];
-        window.geometData.push({
-                        "event":"pageView",
-                        "page":{
-                            "pageName": "home",
-                            "siteSection": "Home",
-                            "siteSubsection": "Home",
-                            },
-                        "user":{
-                            "userID" : userID,
-                            "loginStatus" : "Loggedin"
-                        }
-                    });
+        // window.geometData = window.geometData || [];
+        // window.geometData.push({
+        //                 "event":"pageView",
+        //                 "page":{
+        //                     "pageName": "home",
+        //                     "siteSection": "Home",
+        //                     "siteSubsection": "Home",
+        //                     },
+        //                 "user":{
+        //                     "userID" : userID,
+        //                     "loginStatus" : "Loggedin"
+        //                 }
+        //             });
+
+
+window.adobeDataLayer = window.adobeDataLayer || [];
+
+window.adobeDataLayer.push({
+    "event": "pageView",
+    "user": {
+        "pseudoId": "<pseudo ID>",
+        "userType": "<ETB/NTB etc>",
+    },
+    "pageInfo": {
+        "platform": "Power Apps",
+        "pageName": "<Page Name>",
+        "siteSection": "<Site Section>"
+    },
+    "formDetails": {
+        "journeyID": "<Journey ID>",
+        "journeyName": "<Journey Name>"
+    }
+});
+
 
     </script>
+
+<script src="https://assets.adobedtm.com/80673311e435/a6f662e506ef/launch-0f7ddf2c418f-development.min.js" async></script>
     
 
-<script src="https://assets.adobedtm.com/01296dd00565/9377ff9f4b8c/launch-3340a31f855a-development.min.js" async></script>
+   <!-- <script src="https://assets.adobedtm.com/01296dd00565/9377ff9f4b8c/launch-3340a31f855a-development.min.js" async></script> -->
 
      <!-- <script type="text/javascript" src="js/VisitorAPI.js"></script> 
    <script type="text/javascript" src="js/AppMeasurement.js"></script>  -->
