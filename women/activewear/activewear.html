@@ -28,6 +28,28 @@
 
 </script>
 
+<script>
+    function ctaClick() {
+        window.geometData.push({
+                        "event":"ctaClick",
+                        "page":{
+                            "pageName": "Women:Activewear",
+                            "siteSection": "Women",
+                            "siteSubsection": "Activewear",
+                            "server": "Geometrixx Clothiers Site",
+                        },
+                        "user":{
+                            "userID" : "123456789",
+                            "loginStatus" : ""
+                        },
+                        "user":{
+                            "ctaName" : "test"
+                        }
+                    });
+        document.getElementById("loginStatus").innerHTML = "Regitration Completed !! Happy Shopping!! ";
+    }
+    </script>
+
 <script src="https://assets.adobedtm.com/01296dd00565/9377ff9f4b8c/launch-3340a31f855a-development.min.js" async></script>
 
     <title>Geometrixx|Women|Activewear</title>
@@ -192,7 +214,7 @@
                         <td valign="top">
 
                             <div style="width:195px;margin-right:5px;">
-                                <a href="waist_puffer_jacket.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/active1.jpg" class="photo" width="190" border="0" />
+                                <a href="waist_puffer_jacket.html" onclick="ctaClick()"><img src="https://ats-sb.adobe.com/jjsite/include/images/active1.jpg" class="photo" width="190" border="0" />
                                 </a>
                                 <br />
 
@@ -213,7 +235,7 @@
                             <div class="search_content">
                                 <div class="search_content_inner">
 
-                                    <a href="fur_trim_ski_jacket.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/active2.jpg" class="photo" width="190" border="0" />
+                                    <a href="fur_trim_ski_jacket.html" onclick="ctaClick()"><img src="https://ats-sb.adobe.com/jjsite/include/images/active2.jpg" class="photo" width="190" border="0" />
                                     </a>
                                     <br />
 
@@ -237,7 +259,7 @@
                             <div class="search_content">
                                 <div class="search_content_inner">
 
-                                    <a href="frontzip_ski_jacket.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/active3.jpg" class="photo" width="190" border="0" />
+                                    <a href="frontzip_ski_jacket.html" onclick="ctaClick()"><img src="https://ats-sb.adobe.com/jjsite/include/images/active3.jpg" class="photo" width="190" border="0" />
                                     </a>
                                     <br />
 
@@ -261,7 +283,7 @@
                         <div style="width:195px;margin-right:5px;">
                             <div class="search_content">
                                 <div class="search_content_inner">
-                                    <a href="scrunched_leg_cargo_pants.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/active4.jpg" class="photo" width="190" border="0" />
+                                    <a href="scrunched_leg_cargo_pants.html" onclick="ctaClick()"><img src="https://ats-sb.adobe.com/jjsite/include/images/active4.jpg" class="photo" width="190" border="0" />
                                     </a>
                                     <br />
 
